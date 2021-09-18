@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+:root{
+    --white: #EBEBEB;
+    --black: #000500;
+    --gray: #ACADBC;
+    --light-blue: #6665DD;
+    --blue: #473BF0;
+
+}
+
+nav{
+    background-color: var(--light-blue);
+    border-bottom: 5px solid var(--black);
+}
+
+ol{
+    display: flex;
+    flex-direction: row-reverse;
+
+
+    padding: 1.5vh .5vw;
+    list-style:square;
+}
+
+ol li{
+    margin: 0 2vw;
+} 
+
