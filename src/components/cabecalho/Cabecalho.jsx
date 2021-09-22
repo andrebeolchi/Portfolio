@@ -6,10 +6,10 @@ export default function Cabecalho() {
     return (
         <header>
             <nav>
-                <a href="#">Sobre</a>
-                <a href="#">Projetos</a>
-                <a href="#">Contatos</a>
-                <a href="#" class="button">Download CV</a>
+                <a href="#" className="">Sobre</a>
+                <a href="#" className="">Projetos</a>
+                <a href="#" className="">Contatos</a>
+                <a href="#" className="button">Download CV</a>
             </nav>
         </header>
     )

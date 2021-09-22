@@ -111,7 +111,7 @@ section .row:nth-child(even) .line-icons:nth-child(2){
 
 
 
-bgIcon:focus, .bgIcon:hover {
+.bgIcon:focus, .bgIcon:hover {
     animation: wobble 1s 1;
 }
   

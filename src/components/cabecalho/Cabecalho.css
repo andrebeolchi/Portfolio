@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root{
     --dark-black: #111;
@@ -6,28 +6,47 @@
     --light-black: #1B1B1B;
     --gray: #E1E1E1;
     --white: #FFFFFF;
+    --purple: #7700ff;
 }
 
 header{
     background-color: var(--light-black);
-    height: 7vh;
-    padding: 1.5vh 4vw;
+    padding: 0 4vw;
 }
 
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
+}
+
+nav div{
+
+    height: 7vh;
 }
 
 a{
+    padding: 1.5vh 4vw;
+
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: var(--gray);
-    font-weight: bold;
     font-size: 1.2rem;
+    font-weight: 400;
+
+    transition: 0.5s;
 }
 
-img{
-    width: 5vw;
+a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+a.button{
+    font-weight: 700;
+    background-color: var(--black)
+}
+
+a.button:hover{
+    color: var(--purple);
 }
