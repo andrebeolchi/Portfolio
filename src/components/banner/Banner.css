@@ -46,7 +46,7 @@ section .row{
     box-sizing: content-box;
     transition: 0s;
     color: #7700ff;
-    filter: drop-shadow(0 0 60px #7700ff2f)
+    filter: drop-shadow(0 0 100px #7700ffa2)
 }
 
 /* ------------------------------- ANIMAÇÃO */
