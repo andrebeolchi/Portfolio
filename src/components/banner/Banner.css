@@ -15,8 +15,6 @@ section{
     display: flex;
     flex-direction: column;
     overflow: hidden;
-
-    cursor: none;
 }
 
 section .row{
@@ -46,10 +44,9 @@ section .row{
 
 .bgIcon:hover{
     box-sizing: content-box;
-    cursor:none;
     transition: 0s;
     color: #7700ff;
-    text-shadow: 0 0 120px #7700ff;
+    filter: drop-shadow(0 0 100px #7700ffa2)
 }
 
 /* ------------------------------- ANIMAÇÃO */

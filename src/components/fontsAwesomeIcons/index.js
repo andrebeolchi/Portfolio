@@ -1,5 +1,6 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faGamepad, faCode, faRocket, faHeart, faGlobe, faWifi, faLaptopCode, faHeadphones, faBatteryFull, faBolt} from '@fortawesome/free-solid-svg-icons'
+import { faGamepad, faCode, faRocket, faHeart, faGlobe, faWifi, faLaptopCode, faHeadphones, faBatteryFull, faBolt,
+         faCommentDots, faDiceD6, faEnvelope, faEye, faFingerprint, faFire, faGlobeAmericas, faIceCream, faLaugh, faLightbulb} from '@fortawesome/free-solid-svg-icons'
 
 
 library.add(
@@ -12,4 +13,15 @@ library.add(
     faLaptopCode,
     faHeadphones,
     faBatteryFull,
-    faBolt)
+    faBolt,
+    faCommentDots,
+    faDiceD6,
+    faEnvelope,
+    faEye,
+    faFingerprint,
+    faFire,
+    faGlobeAmericas,
+    faIceCream,
+    faLaugh,
+    faLightbulb
+    )
