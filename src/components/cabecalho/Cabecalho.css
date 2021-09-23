@@ -11,19 +11,30 @@
 
 header{
     background-color: var(--light-black);
-    padding: 0 4vw;
 }
 
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
+}
+
+.sticky {
+    position: fixed;
+    z-index: 9999;
+
+    top: 0;
+    width: 100%;
 }
 
 nav div{
+    display: flex;
+}
 
-    height: 7vh;
+nav .divPages a:first-child {
+    border-radius: 0 0 10px 0;
+
 }
 
 a{
@@ -40,11 +51,13 @@ a{
 
 a:hover{
     background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 10px 10px;
 }
 
 a.button{
     font-weight: 700;
-    background-color: var(--black)
+    background-color: var(--light-black);
+    border-radius: 0 0 0 10px;
 }
 
 a.button:hover{
