@@ -4,6 +4,7 @@
     --light-black: #1B1B1B;
     --gray: #E1E1E1;
     --white: #FFFFFF;
+    --purple: #7700ff;
 }
 
 section{
@@ -111,7 +112,7 @@ section .row:nth-child(even) .line-icons:nth-child(2){
 
 
 
-bgIcon:focus, .bgIcon:hover {
+.bgIcon:focus, .bgIcon:hover {
     animation: wobble 1s 1;
 }
   

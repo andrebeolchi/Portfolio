@@ -1,5 +1,5 @@
 import "./Banner.css"
-import React, { useState } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGamepad, faCode, faRocket, faHeart, faGlobe, faWifi, faLaptopCode, faHeadphones, faBatteryFull, faBolt,
          faCommentDots, faDiceD6, faEnvelope, faEye, faFingerprint, faFire, faGlobeAmericas, faIceCream, faLaugh, faLightbulb} from '@fortawesome/free-solid-svg-icons'
@@ -836,7 +836,6 @@ export default function Banner() {
                     <FontAwesomeIcon className="bgIcon" icon={faLightbulb} />
                 </div>
             </div>
-            
         </section>
     )
 }
