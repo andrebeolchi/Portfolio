@@ -1,4 +1,5 @@
 import "./Banner.css"
+import "../styles.jsx"
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGamepad, faCode, faRocket, faHeart, faGlobe, faWifi, faLaptopCode, faHeadphones, faBatteryFull, faBolt,
