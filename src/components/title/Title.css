@@ -10,16 +10,18 @@
 }
 
 .card{
-    position: relative;
+    position: absolute; 
     width: fit-content;
     max-width: 35vw;
     
     padding: 2rem 1.5rem;
-    margin: -65vh auto;
+    margin: 5vh auto;
+
 
     box-shadow: 3px 3px 20px 10px rgba(0,0,0,0.25);
     background-color: var(--light-black);
     border-radius: 10px;
+    z-index: 2;
 }
 
 h1{
