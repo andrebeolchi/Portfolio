@@ -13,7 +13,7 @@ export const NavSticky = styled.nav`
     align-items: center;
 
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     top: 0;
     width: 100%;
 `;
@@ -64,6 +64,7 @@ export const HdButton = styled.a`
 const DownloadButton = styled(HdButton)`
     font-weight: 700;
     background-color: ${Colors.lightBlack};
+    box-shadow: 3px 3px 20px 10px rgba(0,0,0,0.25);
     
     &:hover{
         color: ${Colors.purple};
