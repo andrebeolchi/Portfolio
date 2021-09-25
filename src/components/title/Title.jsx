@@ -22,7 +22,7 @@ export const Card = styled.div`
     box-shadow: 3px 3px 20px 10px rgba(0,0,0,0.25);
     background-color: var(--light-black);
     border-radius: 10px;
- 
+
     @media(max-width: 700px) {
         max-width: 70vw;
     }
