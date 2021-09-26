@@ -1,9 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import '../fonts.css'
 import { Colors } from '../colors.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
-import '../fonts.css'
+
+
+
+export const TopHeader = styled.header`
+    background-color: ${Colors.lightBlack};
+`;
 
 export const NavSticky = styled.nav`
     display: flex;
@@ -40,9 +46,6 @@ export const FlexDiv = styled.div`
     display: flex;
 `;
 
-export const TopHeader = styled.header`
-    background-color: ${Colors.lightBlack};
-`;
 
 export const HdButton = styled.a`
     padding: 1.5vh 4vw;
@@ -80,7 +83,6 @@ const DownloadButton = styled(HdButton)`
     }
 `   
 
-
 export default function Cabecalho() {
     return (    
         <TopHeader>
@@ -92,7 +94,6 @@ export default function Cabecalho() {
                 </DivPages>
                 <div>
                     <DownloadButton href="#" className="button"><FontAwesomeIcon className="faDownload" icon={faFileDownload}/>Currículo</DownloadButton>
-                    
                 </div>
             </NavSticky>
         </TopHeader>

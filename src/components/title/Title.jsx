@@ -1,6 +1,8 @@
 import './Title.css'
 import React from 'react'
 import styled from 'styled-components';
+import { Colors } from '../colors.js'
+import '../fonts.css'
 
 export const Flex = styled.div` 
     display:flex;
@@ -20,7 +22,7 @@ export const Card = styled.div`
     padding: 2rem 1.5rem;
 
     box-shadow: 3px 3px 20px 10px rgba(0,0,0,0.25);
-    background-color: var(--light-black);
+    background-color: ${Colors.lightBlack};
     border-radius: 10px;
 
     @media(max-width: 700px) {
@@ -37,13 +39,13 @@ export const Frase = styled.h1`
 
 `
 export const Negrito = styled.span`
-    color: var(--gray);
+    color: ${Colors.gray};
     font-size: 32px;
     font-weight: 600;
 `
 
 
-export default function Banner() {
+export default function Title() {
 
     return (
         <Flex>
