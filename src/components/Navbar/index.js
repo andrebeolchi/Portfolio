@@ -1,6 +1,6 @@
 import React from 'react'
-import {FaBars} from 'react-icons/fa'
-import {Nav,
+import {BurgerBar,
+        Nav,
         NavbarContainer,
         NavLogo,
         MobileIcon,
@@ -8,26 +8,26 @@ import {Nav,
         NavItem,
         NavLinks,
         NavBtn,
-        NavBtnLink} from './NavbarElem'
+        NavBtnLink} from './NavbarElement'
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/">46:56</NavLogo>
-                    <MobileIcon>
-                        <FaBars />
+                    <NavLogo to="/">1:14:21</NavLogo>
+                    <MobileIcon onClick={toggle}>
+                        <BurgerBar />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="about">Sobre</NavLinks>
+                            <NavLinks to="about" onClick={toggle}>Sobre</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="project">Projetos</NavLinks>
+                            <NavLinks to="project" onClick={toggle}>Projetos</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="contact">Contato</NavLinks>
+                            <NavLinks to="contact" onClick={toggle}>Contato</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>

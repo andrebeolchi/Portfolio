@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {FaBars} from 'react-icons/fa'
 import {Link as LinkR } from 'react-router-dom'
 import {Link as LinkS} from 'react-scroll'
 import {Colors} from '../colors.js'
@@ -50,11 +51,15 @@ export const MobileIcon = styled.div`
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
-        font-size: 1.8rem;
+        font-size: 2rem;
         cursor: pointer;
         color: ${Colors.gray}
     }
 `
+export const BurgerBar = styled(FaBars)`
+    font-size: 1.8rem;
+`
+
 export const NavMenu = styled.ul`
     display: flex;
     align-items: center;
@@ -82,6 +87,10 @@ export const NavLinks = styled(LinkS)`
 
     &:active{
         border-bottom: 3px solid ${Colors.purple};
+    }
+    
+    &:hover{
+        font-weight: 600;
     }
 `
 export const NavBtn = styled.nav`

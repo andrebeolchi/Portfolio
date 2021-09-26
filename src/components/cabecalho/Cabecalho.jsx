@@ -5,8 +5,6 @@ import { Colors } from '../colors.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
 
-
-
 export const TopHeader = styled.header`
     background-color: ${Colors.lightBlack};
 `;
