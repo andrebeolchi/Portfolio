@@ -104,7 +104,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
-    background: ${Colors.lightBlack};
+    background: ${Colors.purple};
     white-space: nowrap;
     padding: 10px 22px;
     color: ${Colors.gray};
@@ -118,7 +118,8 @@ export const NavBtnLink = styled(LinkR)`
     font-size: 1.2rem;
 
     &:hover{
-        transition: all 0.2 ease-in-out;
-        color: ${Colors.purple}
+        transition: all 0.3s ease-in-out;
+        background-color: ${Colors.gray};
+        color: ${Colors.lightBlack};
     }
 `

@@ -15,19 +15,19 @@ const Navbar = ({ toggle }) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/">1:14:21</NavLogo>
+                    <NavLogo to="/">andre</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <BurgerBar />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="about" onClick={toggle}>Sobre</NavLinks>
+                            <NavLinks to="about">Sobre</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="project" onClick={toggle}>Projetos</NavLinks>
+                            <NavLinks to="project">Projetos</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="contact" onClick={toggle}>Contato</NavLinks>
+                            <NavLinks to="contact">Contato</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
@@ -40,3 +40,6 @@ const Navbar = ({ toggle }) => {
 }
 
 export default Navbar
+
+
+/*1:14:21*/
