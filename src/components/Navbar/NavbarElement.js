@@ -5,9 +5,9 @@ import {Link as LinkS} from 'react-scroll'
 import {Colors} from '../colors.js'
 
 export const Nav = styled.nav`
-    background-color: ${Colors.black};
+    background-color: ${Colors.darkBlack};
+    margin-top: -80px;
     height: 80px;
-    /*margin-top: -80px;*/
     display:flex;
     justify-content: center;
     align-items: center;
