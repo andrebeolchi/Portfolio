@@ -1,16 +1,13 @@
 import './App.css';
-import "./components/fontsAwesomeIcons"
-import Cabecalho from './components/cabecalho/Cabecalho'
-import Banner from './components/banner/Banner'
-import Title from './components/title/Title'
+import {BrowserRouter as Router} from 'react-router-dom'
+
+import Home from './pages/index'
 
 function App() {
   return (
-    <div className="App">
-        <Cabecalho/>
-        <Banner/>
-        <Title/>
-    </div>
+    <Router className="App">
+        <Home />
+    </Router>
   );
 }
 
