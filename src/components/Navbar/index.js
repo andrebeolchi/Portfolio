@@ -43,6 +43,3 @@ const Navbar = ({ toggle }) => {
 }
 
 export default Navbar
-
-
-/*1:43:21*/
