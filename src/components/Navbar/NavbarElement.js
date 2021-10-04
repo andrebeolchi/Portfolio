@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {FaBars} from 'react-icons/fa'
+import {FaBars,FaFileDownload} from 'react-icons/fa'
 import {Link as LinkR } from 'react-router-dom'
 import {Link as LinkS} from 'react-scroll'
 import {Colors} from '../colors.js'
@@ -106,7 +106,7 @@ export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
     background: ${Colors.purple};
     white-space: nowrap;
-    padding: 10px 22px;
+    padding: 10px 32px;
     color: ${Colors.gray};
     font-size: 16px;
     outline: none;
@@ -117,9 +117,17 @@ export const NavBtnLink = styled(LinkR)`
     font-weight: bold;
     font-size: 1.2rem;
 
+    display: flex;
+    align-items: center;
+
     &:hover{
         transition: all 0.3s ease-in-out;
         background-color: ${Colors.gray};
         color: ${Colors.lightBlack};
     }
+`
+
+export const NavFileDownload = styled(FaFileDownload)`
+    font-size: 22px;
+    margin-right: 8px;
 `

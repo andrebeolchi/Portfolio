@@ -8,7 +8,10 @@ import {BurgerBar,
         NavItem,
         NavLinks,
         NavBtn,
-        NavBtnLink} from './NavbarElement'
+        NavBtnLink,
+        NavFileDownload} from './NavbarElement'
+
+import {FaFileDownload} from 'react-icons/fa'
 
 const Navbar = ({ toggle }) => {
     return (
@@ -31,7 +34,7 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to='#'>Currículo</NavBtnLink>
+                        <NavBtnLink to='#'><NavFileDownload />Currículo</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
@@ -42,4 +45,4 @@ const Navbar = ({ toggle }) => {
 export default Navbar
 
 
-/*1:14:21*/
+/*1:43:21*/
