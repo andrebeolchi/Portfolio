@@ -11,8 +11,6 @@ import {BurgerBar,
         NavBtnLink,
         NavFileDownload} from './NavbarElement'
 
-import {FaFileDownload} from 'react-icons/fa'
-
 const Navbar = ({ toggle }) => {
     return (
         <>
