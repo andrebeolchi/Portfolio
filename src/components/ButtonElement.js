@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 import {Link} from 'react-scroll'
 
-export const HeroButton = styled(Link)`
+export const Button = styled(Link)`
     border-radius: 50px;
-    background: ${({primary}) => (primary ?  '#9233FF': '#fff')};
+    background: ${({primary}) => (primary ?  '#612DE0': '#612DE0')};
     white-space: nowrap;
     color: ${({dark}) => (dark ?  '#fff': '#fff')};
     padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
@@ -19,15 +19,7 @@ export const HeroButton = styled(Link)`
     
     &:hover{
         transition: all 0.3s ease-in-out;
-        background: ${({primary}) => (primary ?  '#fff': '#9233ff')};
-        color: ${({dark}) => (dark ?  '#1B1B1B': '#fff')};
-        font-weight: bold;
-    }
-`
-export const InfoButton = styled(HeroButton)`
-    &:hover{
-        transition: all 0.3s ease-in-out;
-        background: ${({primary}) => (primary ?  '#1B1B1B': '#9233ff')};
+        background: ${({primary}) => (primary ?  '#1B1B1B': '#fff')};
         color: ${({dark}) => (dark ?  '#fff': '#1B1B1B')};
         font-weight: bold;
     }

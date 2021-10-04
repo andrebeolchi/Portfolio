@@ -8,7 +8,8 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 800px;
+    height: 100vh;
+    position: relative;
     z-index: 1;
 
     :before{
@@ -18,8 +19,8 @@ export const HeroContainer = styled.div`
         bottom: 0;
         left: 0;
         right: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.6) 100%), 
-                    linear-gradient(180deg, rgba(0,0,0,0.35) 0%, transparent 100%);
+        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), 
+                    linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
         z-index: 2;
     }
 `
@@ -41,7 +42,7 @@ export const VideoBg = styled.video`
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    background-image: #23234
+    background: #232a34;
     -webkit-filter: hue-rotate(90deg);
     filter: hue-rotate(-90deg);
 `
@@ -66,7 +67,7 @@ export const HeroH1 = styled.h1`
     }
     
     @media screen and (max-width: 480px){
-        font-size:32px;
+        font-size: 32px;
     }
 
 `

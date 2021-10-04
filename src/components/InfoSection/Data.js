@@ -1,38 +1,52 @@
 export const homeObjOne = {
-    id: 'projetosOne',
+    id: 'about',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
     topLine: 'Watch Security',
-    headLine: 'Criada em 2020 por estudantes de Defesa Cibernética da FIAP',
-    description: 'Para desenvolver um projeto para a PrideSecurtity, consultoria especializada em segurança da informação',
+    headLine: 'Consultoria de Segurança da Informação',
+    description: 'Criada em 2020 por estudantes de Defesa Cibernética da FIAP, para desenvolver um projeto para a PrideSecurtity, consultoria especializada em segurança da informação',
     buttonLabel: 'Saiba mais',
     imgStart: false,
-    img: require('../../img/svg-1.svg'),
+    img: require('../../images/PurpleWatchLogo.svg').default,
     alt: 'Logotipo Watch Security',
+    imgText: true,
     dark: true,
     primary: true,
     darkText: true
 }
 
-// export const homeObjOne = {
-//     id: 'projetosTwo',
-//     lightBg: false,
-//     lightText: true,
-//     lightTextDesc: true,
-//     topLine: 'IRIS WebScraping',
-//     headLine: 'Ferramenta de WebScraping responsável por buscar, extrair, filtrar dados sensíveis na Internet',
-//     description: 'Essa ferramenta foi desenvolvida utilizando a linguagem de programação Python para buscar emails com credenciais expostas na internet e alertar ao usuário via telegram que seu email foi exposto.',
+export const homeObjTwo = {
+    id: 'project',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Watch Security',
+    headLine: 'Consultoria de Segurança da Informação',
+    description: 'Criada em 2020 por estudantes de Defesa Cibernética da FIAP, para desenvolver um projeto para a PrideSecurtity, consultoria especializada em segurança da informação',
+    buttonLabel: 'Saiba mais',
+    imgStart: true,
+    img: require('../../images/PurpleIrisLogoDefault.svg').default,
+    alt: 'Logotipo Watch Security',
+    imgText: false,
+    dark: false,
+    primary: false,
+    darkText: false
+}
+
+// export const homeObjThree = {
+//     id: 'contact',
+//     lightBg: true,
+//     lightText: false,
+//     lightTextDesc: false,
+//     topLine: 'Watch Security',
+//     headLine: 'Consultoria de Segurança da Informação',
+//     description: 'Criada em 2020 por estudantes de Defesa Cibernética da FIAP, para desenvolver um projeto para a PrideSecurtity, consultoria especializada em segurança da informação',
 //     buttonLabel: 'Saiba mais',
 //     imgStart: false,
-//     img: require('../../images/Iris.png'),
-//     alt: 'Logotipo Iris',
+//     img: require('../../images/teste.svg').default,
+//     alt: 'Logotipo Watch Security',
 //     dark: true,
 //     primary: true,
-//     darkText: false
-
-
-// 2 23 47
-
-
+//     darkText: true
 // }
