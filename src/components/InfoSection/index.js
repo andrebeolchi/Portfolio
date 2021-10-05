@@ -1,6 +1,6 @@
 import React from 'react'
-import { InfoButton } from '../ButtonElement'
-
+import {FaArrowCircleDown, FaPlay} from 'react-icons/fa'
+import { Button } from '../ButtonElement'
 import { InfoContainer,
          InfoWrapper,
          InfoRow,
@@ -14,7 +14,7 @@ import { InfoContainer,
          ImgWrap,
          Img} from './InfoElements'
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) => {
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, img, alt, imgText, primary, dark, dark2, where, playIcon }) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -28,7 +28,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
                                     {description}
                                 </SubTitle>
                                 <BtnWrap>
-                                    <InfoButton to="home" 
+                                    <Button to={where} 
                                             smooth={true}
                                             duration={500}
                                             spy={true}
@@ -38,14 +38,15 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
                                             dark={dark ? 1 : 0}
                                             dark2={ dark2 ? 1 : 0}
                                     >
-                                                {buttonLabel}
-                                    </InfoButton>
+                                                {playIcon ? <FaPlay style={{ marginRight: '8px' }}/> : <FaArrowCircleDown style={{ marginRight: '8px' }}/>}
+                                                {buttonLabel} 
+                                    </Button>
                                 </BtnWrap>
                             </TextWrapper>
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img src={img} alt={alt}/>
+                                <Img src={img} alt={alt} imgText={imgText}/>
                             </ImgWrap>
                         </Column2>
                     </InfoRow>

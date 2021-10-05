@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Video from '../../videos/data.mp4';
-import { HeroButton } from '../ButtonElement';
+import { Button } from '../ButtonElement';
 import {
     HeroContainer,
     HeroContent,
@@ -29,13 +29,11 @@ const HeroSection = () => {
                 <HeroH1>André Beolchi</HeroH1>
                 <HeroP>“Feito de cicatriz e gratidão pelas tempestades que passei, sigo na luta sempre por dias melhores.”</HeroP>
                 <HeroBtnWrapper>
-                    <HeroButton to="contact" 
+                    <Button to="contact" 
                             onMouseEnter={onHover}
-                            onMouseLeave={onHover}
-                            primary='true'
-                            dark='false'>
+                            onMouseLeave={onHover}>
                         Contato {hover ? <ArrowForward /> : <ArrowRight />}
-                    </HeroButton>
+                    </Button>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>
