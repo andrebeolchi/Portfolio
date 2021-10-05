@@ -96,7 +96,7 @@ export const BtnWrap = styled.div`
 `
 
 export const ImgWrap = styled.div`
-    max-width: 450px;
+    max-width: 350px;
     height: 100%;
     
     display: flex;
@@ -104,7 +104,7 @@ export const ImgWrap = styled.div`
     margin: auto;
 
     @media screen and (max-width: 768px) {
-        max-width: 300px;
+        max-width: 175px;
     }
     `
 
