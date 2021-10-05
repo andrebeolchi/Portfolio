@@ -1,4 +1,5 @@
 import React from 'react'
+import {FaArrowCircleDown, FaPlay} from 'react-icons/fa'
 import { Button } from '../ButtonElement'
 import { InfoContainer,
          InfoWrapper,
@@ -13,7 +14,7 @@ import { InfoContainer,
          ImgWrap,
          Img} from './InfoElements'
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, img, alt, imgText, primary, dark, dark2}) => {
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, img, alt, imgText, primary, dark, dark2, where, playIcon }) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -27,7 +28,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
                                     {description}
                                 </SubTitle>
                                 <BtnWrap>
-                                    <Button to="home" 
+                                    <Button to={where} 
                                             smooth={true}
                                             duration={500}
                                             spy={true}
@@ -37,7 +38,8 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
                                             dark={dark ? 1 : 0}
                                             dark2={ dark2 ? 1 : 0}
                                     >
-                                                {buttonLabel}
+                                                {playIcon ? <FaPlay style={{ marginRight: '8px' }}/> : <FaArrowCircleDown style={{ marginRight: '8px' }}/>}
+                                                {buttonLabel} 
                                     </Button>
                                 </BtnWrap>
                             </TextWrapper>
