@@ -6,7 +6,7 @@ export const homeObjOne = {
     lightTextDesc: false,
     topLine: 'Watch Security',
     headLine: 'Consultoria de Segurança da Informação',
-    description: 'Criada em 2020 por estudantes de Defesa Cibernética da FIAP, para desenvolver um projeto para a PrideSecurtity, consultoria especializada em segurança da informação',
+    description: 'Criada em 2020 por estudantes de Defesa Cibernética da FIAP, para desenvolver um projeto para a PrideSecurity, consultoria especializada em segurança da informação',
     buttonLabel: 'Saiba mais',
     playIcon: false,
     imgStart: false,
