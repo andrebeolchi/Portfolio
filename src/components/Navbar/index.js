@@ -14,7 +14,7 @@ import {BurgerBar,
 const Navbar = ({ toggle }) => {
 
 	const downloadCV = () => {
-		fetch('http://beolchi.netlify.app/download/CV_AndreBeolchi_08_2021.pdf')
+		fetch('https://beolchi.netlify.app/download/CV_AndreBeolchi_08_2021.pdf')
 			.then(response => {
 				response.blob().then(blob => {
 					let url = window.URL.createObjectURL(blob);
