@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {BurgerBar,
         Nav,
         NavbarContainer,
@@ -12,6 +12,19 @@ import {BurgerBar,
         NavFileDownload} from './NavbarElement'
 
 const Navbar = ({ toggle }) => {
+
+	const downloadCV = () => {
+		fetch('http://beolchi.netlify.app/download/CV_AndreBeolchi_08_2021.pdf')
+			.then(response => {
+				response.blob().then(blob => {
+					let url = window.URL.createObjectURL(blob);
+					let a = document.createElement('a');
+					a.href = url;
+					a.download = 'CV_AndreBeolchi.pdf';
+					a.click();
+				});
+	})}
+	
     return (
         <>
             <Nav>
@@ -32,7 +45,10 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to='#'><NavFileDownload />Currículo</NavBtnLink>
+                        <NavBtnLink onClick={downloadCV}>
+                                    <NavFileDownload />
+                                    Currículo
+                        </NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
