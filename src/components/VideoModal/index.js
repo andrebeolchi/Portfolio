@@ -14,7 +14,7 @@ export const VideoModal = ({showModal, setShowModal, url}) => {
             {showModal ? (
                 <ModalContainer >
                     <ModalWrapper showModal={showModal}>
-                        <Video src={url}/> 
+                        <Video src={url} type="video/mp4" controls/> 
                     </ModalWrapper>
                         <CloseModalButton onClick={() => setShowModal(prev => !prev)}/>
                 </ModalContainer>

@@ -34,7 +34,7 @@ export const homeObjTwo = {
     dark: false,
     primary: false,
     darkText: false,
-    url: "https://drive.google.com/file/d/1O6FO2Drs4zZ2iNOnAi_-Wu2TOecC3djR/preview"
+    url: require('../../videos/iris.mp4').default
 }
 
 export const homeObjThree = {
@@ -73,5 +73,5 @@ export const homeObjFour = {
     dark: false,
     primary: false,
     darkText: false,
-    url: "https://drive.google.com/file/d/1F0gEs2TVdB9KEX1YkyNSgZXeAPHLsCxQ/preview"
+    url: require('../../videos/mind.mp4').default
 }

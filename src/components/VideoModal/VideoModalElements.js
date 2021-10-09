@@ -34,7 +34,7 @@ export const ModalWrapper = styled.div`
     }
     `
 
-export const Video = styled.iframe`
+export const Video = styled.video`
     width: 100%;
     height: 100%;
     border: none;
