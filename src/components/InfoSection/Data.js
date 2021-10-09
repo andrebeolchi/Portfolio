@@ -33,7 +33,8 @@ export const homeObjTwo = {
     alt: 'Logotipo IRIS',
     dark: false,
     primary: false,
-    darkText: false
+    darkText: false,
+    url: "https://drive.google.com/file/d/1O6FO2Drs4zZ2iNOnAi_-Wu2TOecC3djR/preview"
 }
 
 export const homeObjThree = {
@@ -71,5 +72,6 @@ export const homeObjFour = {
     alt: 'Logotipo MindSec',
     dark: false,
     primary: false,
-    darkText: false
+    darkText: false,
+    url: "https://drive.google.com/file/d/1F0gEs2TVdB9KEX1YkyNSgZXeAPHLsCxQ/preview"
 }
