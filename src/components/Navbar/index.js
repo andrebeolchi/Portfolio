@@ -74,7 +74,7 @@ const Navbar = ({ toggle }) => {
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavPageLinks href="contato">Contato</NavPageLinks>
+                                <NavPageLinks to="/contato">Contato</NavPageLinks>
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
