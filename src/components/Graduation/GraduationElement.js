@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Colors} from '../colors'
 
 export const GraduationContainer = styled.div`
-    height: 800px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

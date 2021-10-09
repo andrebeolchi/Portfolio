@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {FaArrowCircleDown, FaPlay} from 'react-icons/fa'
 import { Button } from '../ButtonElement'
+import VideoModal from '../VideoModal'
 import { InfoContainer,
          InfoWrapper,
          InfoRow,
@@ -12,12 +13,22 @@ import { InfoContainer,
          BtnWrap,
          Column2,
          ImgWrap,
-         Img} from './InfoElements'
+         Img
+    } from './InfoElements'
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, img, alt, imgText, primary, dark, dark2, where, playIcon }) => {
+         
+
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, img, alt, imgText, primary, dark, dark2, where, playIcon, url}) => {
+    const [showModal, setShowModal] = useState(false);
+
+    const openModal = () => {
+        setShowModal(prev => !prev);
+    }
+
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
+            {playIcon ? (<VideoModal showModal={showModal} setShowModal={setShowModal} url={url} />) : null}
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1>
@@ -37,9 +48,11 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
                                             primary={primary ? 1 : 0}
                                             dark={dark ? 1 : 0}
                                             dark2={ dark2 ? 1 : 0}
-                                    >
-                                                {playIcon ? <FaPlay style={{ marginRight: '8px' }}/> : <FaArrowCircleDown style={{ marginRight: '8px' }}/>}
-                                                {buttonLabel} 
+                                            onClick={openModal}
+                                            >
+                                                {playIcon ? <FaPlay style={{ marginRight: '8px' }}/> : 
+                                                            <FaArrowCircleDown style={{ marginRight: '8px' }}/>}
+                                                {buttonLabel}
                                     </Button>
                                 </BtnWrap>
                             </TextWrapper>
@@ -48,6 +61,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
                             <ImgWrap>
                                 <Img src={img} alt={alt} imgText={imgText}/>
                             </ImgWrap>
+                            
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>

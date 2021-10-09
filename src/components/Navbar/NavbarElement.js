@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import {FaBars,FaFileDownload} from 'react-icons/fa'
+
 import {Link as LinkR } from 'react-router-dom'
 import {Link as LinkS} from 'react-scroll'
 import {Colors} from '../colors.js'
 
 export const Nav = styled.nav`
-    background-color: ${Colors.darkBlack};
+    background-color: ${({scrollNav}) => (scrollNav ? Colors.darkBlack : Colors.darkBlack)};
     margin-top: -80px;
     height: 80px;
     display:flex;
@@ -15,6 +16,7 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
+    transition: 0.3s all ease-in-out;
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
@@ -30,7 +32,7 @@ export const NavbarContainer = styled.div`
     padding: 0 24px 0 0;
     max-width: 1100px;
 `
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(LinkS)`
     text-decoration: none;
     color: ${Colors.gray};
     justify-self: flex-start;
@@ -84,8 +86,9 @@ export const NavLinks = styled(LinkS)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-
-    &:active{
+    font-weight: 500;
+    
+    &.active{
         border-bottom: 3px solid ${Colors.purple};
     }
     
@@ -99,6 +102,25 @@ export const NavBtn = styled.nav`
 
     @media screen and (max-width: 768px) {
         display: none;
+    }
+`
+
+export const NavPageLinks = styled(LinkR)`
+    color: ${Colors.gray};
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 500;
+    
+    &.active{
+        border-bottom: 3px solid ${Colors.purple};
+    }
+    
+    &:hover{
+        font-weight: 600;
     }
 `
 

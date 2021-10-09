@@ -33,7 +33,8 @@ export const homeObjTwo = {
     alt: 'Logotipo IRIS',
     dark: false,
     primary: false,
-    darkText: false
+    darkText: false,
+    url: require('../../videos/iris.mp4').default
 }
 
 export const homeObjThree = {
@@ -71,5 +72,6 @@ export const homeObjFour = {
     alt: 'Logotipo MindSec',
     dark: false,
     primary: false,
-    darkText: false
+    darkText: false,
+    url: require('../../videos/mind.mp4').default
 }

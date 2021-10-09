@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaLinux, FaPython } from 'react-icons/fa'
+import { animateScroll as scroll } from 'react-scroll'
 import {FooterContainer,
         FooterWrap,
         FooterLinkContainer,
@@ -17,6 +18,9 @@ import {FooterContainer,
         } from './FooterElement'
 
 const Footer = () => {
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
     return (
         <FooterContainer>
             <FooterWrap>
@@ -45,7 +49,7 @@ const Footer = () => {
                 </FooterLinkContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to='/'>Portfolio</SocialLogo>
+                        <SocialLogo to='/' onClick={toggleHome}>Portfolio</SocialLogo>
                         <WebsiteRights>André Beolchi © 2021 - {new Date().getFullYear()}</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href="https://github.com/andrebeolchi" target="_blank" aria-label="Github">

@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 
 const Home = () => {
 
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
         setIsOpen(!isOpen);
