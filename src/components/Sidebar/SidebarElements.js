@@ -69,6 +69,23 @@ export const SidebarLink = styled(LinkS)`
         transition: 0.2s ease-in-out;
     }
 `
+export const SidebarPageLink = styled(LinkR)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2 ease-in-out;
+    text-decoration: none;
+    color: ${Colors.white};
+    cursor: pointer;
+
+    &:hover{
+        color: ${Colors.purple};
+        transition: 0.2s ease-in-out;
+    }
+`
 
 export const SideBtnWrap = styled.div`
     display:flex;
@@ -76,7 +93,7 @@ export const SideBtnWrap = styled.div`
     align-items: center;
 `
 
-export const SidebarRoute = styled(LinkR)`
+export const SidebarBtnLink = styled.a`
     border-radius: 50px;
     background: ${Colors.purple};
     white-space: nowrap;
