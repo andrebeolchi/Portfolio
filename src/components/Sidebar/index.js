@@ -7,8 +7,9 @@ import {
     SidebarMenu,
     SidebarLink,
     SideBtnWrap,
-    SidebarRoute,
-    DownloadIcon
+    SidebarBtnLink,
+    DownloadIcon,
+    SidebarPageLink
 } from './SidebarElements'
 
 
@@ -20,12 +21,12 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about" onClick={toggle}>Sobre</SidebarLink>
-                    <SidebarLink to="project" onClick={toggle}>Projetos</SidebarLink>
-                    <SidebarLink to="contact" onClick={toggle}>Contato</SidebarLink>
+                    <SidebarLink to="graduation" onClick={toggle}>Sobre</SidebarLink>
+                    <SidebarLink to="watchsec" onClick={toggle}>Projetos</SidebarLink>
+                    <SidebarPageLink to="/contato" onClick={toggle}>Contato</SidebarPageLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='#'><DownloadIcon />Currículo</SidebarRoute>
+                    <SidebarBtnLink href='https://drive.google.com/uc?id=1_mdMYc3_W8jrBj7JkT_AqVpIdofuSjZl&export=download' download><DownloadIcon />Currículo</SidebarBtnLink>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
