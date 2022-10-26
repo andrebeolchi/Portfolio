@@ -67,15 +67,12 @@ export const homeObjFour = {
     topLine: '1° Lugar - Mind',
     headLine: 'Site de Apoio Emocional',
     description: 'Mind é o nome dado ao nosso site que conecta de forma fácil e gratuita usuários que necessitam de um apoio emocional profissional online. ',
-    buttonLabel: 'Assista',
-    playIcon: false,
     imgStart: true,
     img: require('../../images/PurpleMindLogo.svg').default,
     alt: 'Logotipo MindSec',
     dark: false,
     primary: false,
     darkText: false,
-    // url: require('../../videos/mind.mp4').default
 }
 
 export const homeObjFive = {
