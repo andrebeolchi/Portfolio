@@ -1,19 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import { animateScroll as scroll } from 'react-scroll';
+import React, { useEffect, useState } from 'react';
 import { IconContext } from 'react-icons/lib';
+import { animateScroll as scroll } from 'react-scroll';
 import { Colors } from '../colors';
-import {BurgerBar,
-        Nav,
-        NavbarContainer,
-        NavLogo,
-        MobileIcon,
-        NavMenu,
-        NavItem,
-        NavLinks,
-        NavBtn,
-        NavBtnLink,
-        NavFileDownload,
-        NavPageLinks} from './NavbarElement'
+import {
+    BurgerBar, MobileIcon, Nav,
+    NavbarContainer, NavBtn,
+    NavBtnLink,
+    NavFileDownload, NavItem,
+    NavLinks, NavLogo, NavMenu, NavPageLinks
+} from './NavbarElement';
 
 const Navbar = ({ toggle }) => {
 
@@ -78,7 +73,7 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
-                            <NavBtnLink href="https://drive.google.com/uc?id=1_mdMYc3_W8jrBj7JkT_AqVpIdofuSjZl&export=download" download>
+                            <NavBtnLink href="https://drive.google.com/uc?id=1mk7IiaCk7CFVAlLxi2qCA4Nuulog5BU9&export=download" download>
                                         <NavFileDownload />
                                         Currículo
                             </NavBtnLink>

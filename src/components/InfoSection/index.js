@@ -61,7 +61,6 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
                             <ImgWrap>
                                 <Img src={img} alt={alt} imgText={imgText}/>
                             </ImgWrap>
-                            
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>

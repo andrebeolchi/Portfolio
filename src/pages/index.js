@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import Footer from '../components/Footer'
+import Graduation from '../components/Graduation'
 import HeroSection from '../components/HeroSection'
 import InfoSection from '../components/InfoSection'
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour} from '../components/InfoSection/Data'
+import { homeObjFive, homeObjFour, homeObjOne, homeObjSix, homeObjThree, homeObjTwo } from '../components/InfoSection/Data'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
-import Graduation from '../components/Graduation'
-import Footer from '../components/Footer'
 
 const Home = () => {
 
@@ -26,6 +26,8 @@ const Home = () => {
             <InfoSection {...homeObjTwo }/>
             <InfoSection {...homeObjThree }/>
             <InfoSection {...homeObjFour }/>
+            <InfoSection {...homeObjFive }/>
+            <InfoSection {...homeObjSix }/>
             <Footer/>
         </>
     )
