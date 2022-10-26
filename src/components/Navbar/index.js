@@ -59,7 +59,7 @@ const Navbar = ({ toggle }) => {
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="watchsec"
+                                <NavLinks to="boskoapp"
                                         smooth={true}
                                         duration={500}
                                         spy={true}
