@@ -29,27 +29,27 @@ const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headLine, dark
                                 <SubTitle darkText={darkText}>
                                     {description}
                                 </SubTitle>
-                                <BtnWrap>
-
-
-
-
-                                    <Button to={where}
-                                        smooth={true}
-                                        duration={500}
-                                        spy={true}
-                                        exact="true"
-                                        offset={-80}
-                                        primary={primary ? 1 : 0}
-                                        dark={dark ? 1 : 0}
-                                        dark2={dark2 ? 1 : 0}
-                                        onClick={openModal}
-                                    >
-                                        {playIcon ? <FaPlay style={{ marginRight: '8px' }} /> :
-                                            <FaArrowCircleDown style={{ marginRight: '8px' }} />}
-                                        {buttonLabel}
-                                    </Button>
-                                </BtnWrap>
+                                {
+                                    Boolean(buttonLabel) && (
+                                        <BtnWrap>
+                                            <Button to={where}
+                                                smooth={true}
+                                                duration={500}
+                                                spy={true}
+                                                exact="true"
+                                                offset={-80}
+                                                primary={primary ? 1 : 0}
+                                                dark={dark ? 1 : 0}
+                                                dark2={dark2 ? 1 : 0}
+                                                onClick={openModal}
+                                            >
+                                                {playIcon ? <FaPlay style={{ marginRight: '8px' }} /> :
+                                                    <FaArrowCircleDown style={{ marginRight: '8px' }} />}
+                                                {buttonLabel}
+                                            </Button>
+                                        </BtnWrap>
+                                    )
+                                }
                             </TextWrapper>
                         </Column1>
                         <Column2>
