@@ -75,7 +75,7 @@ export const homeObjFour = {
     dark: false,
     primary: false,
     darkText: false,
-    // url: require('../../videos/mind.mp4').default
+    url: require('../../videos/mind.mp4').default
 }
 
 export const homeObjFive = {
